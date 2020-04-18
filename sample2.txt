@@ -1,0 +1,3 @@
+ec2-user:~/environment (master) $ cd php_practice
+ec2-user:~/environment/php_practice (master) $ php php
+108月Hello! KISHIs'worldtech boost12月ec2-user:~/environment/php_practice

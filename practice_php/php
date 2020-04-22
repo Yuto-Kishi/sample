@@ -1,0 +1,39 @@
+<?php
+//１＄a+$bの結果を表示
+$a = 3; $b = 7;
+echo $a + $b;
+
+//2 $array_monthsの配列から８月を表示
+$array_months = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
+echo $array_months[7];
+
+//3 各変数の連結
+$hello = "Hello! ";
+$name = "KISHI";
+$world = "s'world";
+echo $hello.$name.$world;
+
+//4 「tech boost」と表示させる(複合演算を用いる)
+$tech_boost = "tech";
+$tech_boost .= " boost";
+echo $tech_boost;
+
+//5  応用　バグ修正
+//変数名の初めが数字は使用できない。
+//「"10月"」ダブルクオート忘れ
+// ＝の後に＞のつけ忘れ（6月）
+$calender_2018 = [ 
+  "January" => "1月",
+  "February" => "2月",
+  "March" => "3月",
+  "April" => "4月",
+  "May" => "5月",
+  "June" => "6月",
+  "July" => "7月",
+  "August" => "8月",
+  "September" => "9月",
+  "October" => "10月",   
+  "November" => "11月",
+  "December" => "12月"
+];
+echo $calender_2018["December"];

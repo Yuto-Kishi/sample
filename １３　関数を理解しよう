@@ -1,0 +1,90 @@
+//1
+<?php
+function 課題１(&$a){
+    $a = $a*2;
+}
+$d = 9;課題１($d);
+echo $d;
+?>
+
+
+
+
+//2
+<?php
+function 課題２($a, $b){
+    return $a + $b;
+}
+echo 課題２(7,7);
+?>
+
+
+
+
+//3
+<?php
+function 課題３($arr){
+$a = 1;
+foreach($arr as $c){
+    $a *= $c;
+}
+return $a;
+}
+$arr = array(1,3,5,7,9);
+echo 課題３($arr);
+echo "＼n";
+?>
+
+
+
+//4
+<?php
+function max_array($arr){
+    $max_number = $arr[0];
+    foreach($arr as $a){
+    if ($max_number < $a){
+        $max_number = $a;
+    }
+    }
+    return $max_number;
+}
+  echo max_array(array(12,133,54,757,86,35,));
+  echo "＼n";
+?>
+
+
+
+
+//5  strip_tag
+<?php
+$str = "<h1>strip_tags関数</h1>"
+."<p>タグを取り除く！</p>";
+echo strip_tags($str) . "＼n"
+?>
+
+
+
+
+
+//array_push
+<?php
+$stack = array("いちご","りんご");
+array_push($stack,"ぶどう");
+print_r($stack);
+?>
+
+
+
+
+//array_merge
+<?php
+$array1 = [1, 2, 3];
+$array2 = [10, 20, 30];
+$array3 = [100, 200, 300];
+
+$array = array_merge($array1, $array2, $array3);
+ 
+print_r($array);
+?>
+
+
